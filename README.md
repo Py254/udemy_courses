@@ -1,4 +1,4 @@
-# Udemy Courses Dataset Analysis
+# Udemy Courses Exploratory Analysis
 
 ## Project Overview
 
@@ -8,10 +8,7 @@ This project involves analyzing a dataset of Udemy courses using Python and Pand
 
 - [Project Overview](#project-overview)
 - [Data Sources](#data-sources)
-- [Project Structure](#project-structure)
-- [Analysis](#analysis)
-  - [Key Questions and Insights](#key-questions-and-insights)
-- [Results and Recommendations](#results-and-recommendations)
+- [Key Questions and Insights](#key-questions-and-insights)
 - [Acknowledgments](#acknowledgments)
 
 ## Data Sources
@@ -26,25 +23,7 @@ The dataset used in this project is a **Udemy Courses Dataset**, which contains 
 - **published_timestamp**: Date when the course was published.
 - **level**: Difficulty level of the course (e.g., Beginner, Intermediate, Advanced).
 
-## Project Structure
-
-The project is structured as follows:
-
-```
-Udemy-Courses-Analysis/
-│
-├── data/
-│   └── file.csv                  
-│
-├── notebooks/
-│   └── udemy_courses_analysis.ipynb 
-│
-├── README.md                     
-```
-
-## Analysis
-
-### Key Questions and Insights
+## Key Questions and Insights
 
 The project answers several key questions about the Udemy courses dataset, including:
 
@@ -59,36 +38,6 @@ Q. 8) List out all the courses that are related to 'Python'.
 Q. 9) What are courses that were published in the year 2015 ?
 Q. 10) What is the Max. Number of Subscribers for Each Level of courses ?
 
-### Example Code to Extract Insights:
-
-Here’s a sample of how the dataset is explored in the notebook:
-
-```python
-import pandas as pd
-
-# Load the dataset
-dat = pd.read_csv('path_to_your_file.csv')
-
-# Show unique course subjects
-print(dat.subject.unique())
-
-# Count the number of courses per subject
-print(dat.subject.value_counts())
-
-# Filter and display free courses
-free_courses = dat[dat.is_paid == False]
-print(free_courses)
-
-# Show top-selling courses by number of subscribers
-top_selling_courses = dat.sort_values('num_subscribers', ascending=False)
-print(top_selling_courses.head())
-
-# Filter Python-related courses
-python_courses = dat[dat.course_title.str.contains('Python')]
-print(python_courses)
-```
-
-## Results and Recommendations
 
 ### Key Insights:
 

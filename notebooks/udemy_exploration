@@ -12,7 +12,7 @@ import pandas as pd
 
 
 #pd.read_csv - To import the CSV file in Jupyter notebook.
-dat=pd.read_csv(r"C:\Users\ADMIN\Downloads\file.csv")
+dat=pd.read_csv(r"C:\Users\ADMIN\Downloads\udemy.csv")
 
 
 # In[5]:
